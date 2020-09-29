@@ -1,0 +1,15 @@
+<template>
+    <lightning-card>
+        <h3 slot="title">
+            <lightning-icon icon-name="custom:custom11" title="custom11"></lightning-icon>
+             Calculator
+        </h3>
+        <div slot="footer">
+           <c-calresult result={results}></c-calresult>
+        </div>
+        <p class="slds-p-horizontal_medium">
+            <lightning-input value={firstNumber} name="fnumber" label="First number" onchange={handleChange}></lightning-input>
+            <lightning-input value={secondNumber} name="Snumber" label="Second Number" onchange={handleChange}></lightning-input>
+        </p>
+    </lightning-card>
+</template> 
